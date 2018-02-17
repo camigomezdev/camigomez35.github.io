@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { GhComponent } from './ghcomponent/ghcomponent.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GhComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    AboutmeComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
