@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { NewsComponent } from './news/news.component';
+import { LikemeComponent } from './likeme/likeme.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NewsComponent } from './news/news.component';
     HomeComponent,
     FooterComponent,
     AboutmeComponent,
-    NewsComponent
+    NewsComponent,
+    LikemeComponent
   ],
   imports: [
     BrowserModule,
