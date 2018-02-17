@@ -1,0 +1,118 @@
+/* === NAVIGATION === */
+.header {
+    border-bottom: 1px solid #eee;
+    position: relative;
+    width: 100%;
+    z-index: 998;
+    padding-bottom: 1px;
+    background: #fff;
+}
+
+.header::after {
+    border-bottom:1px solid #eee;
+    width: 100%;
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: 1px;
+    left: 0;
+}
+
+.navbar-custom {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.navbar-custom,
+.navbar-custom .dropdown-menu {
+    background: #fff;
+    padding: 0;
+}
+
+.navbar-custom ul li a span{
+    margin-left:5px;
+}
+
+.navbar-custom .dropdown-menu {
+    margin-top:10px;
+    display: block;
+    visibility: hidden;
+    opacity:0;
+    border: 1px solid #ddd;
+    border-top: 2px solid #68c3a3;
+    border-radius: 0;
+    border-bottom: 3px double #ddd;
+    background-color: #FFFFFF;
+    -webkit-transition:all 400ms;
+    -moz-transition:all 400ms;
+    -o-transition:all 400ms;
+    transition:all 400ms;
+}
+
+
+.navbar-right .dropdown-menu {
+  right: auto;
+  left: 0;
+}
+.navbar-custom .navbar-nav > li:hover .dropdown-menu{
+    display: block;
+    opacity:1;
+    visibility: visible;
+    margin-top:-2px;
+}
+
+.navbar-custom .navbar-nav > li > a{
+    color: #282828;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.navbar-custom .dropdown-menu > li{
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.navbar-custom .dropdown-menu > li:last-child{
+    border-bottom: 0;
+}
+
+.navbar-custom .dropdown-menu > li > a {
+    padding: 10px 20px;
+    color: #282828;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar-custom .nav li.active,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .navbar-nav > li.active > a {
+    background: none;
+    outline: 0;
+    color: #68c3a3;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.navbar-custom .nav .open > a,
+.navbar-custom .dropdown-menu > li > a:hover,
+.navbar-custom .dropdown-menu > li > a:focus {
+    background: #f5f5f5;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background: #222;
+}
+
+.navbar-brand {
+  margin: 5px;
+}
