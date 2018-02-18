@@ -1,0 +1,11 @@
+.background-image-container {
+    background-attachment: fixed;
+
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 20% 0;
+    position: relative;
+    text-align: center;
+}
