@@ -5259,7 +5259,7 @@ body {
 }
 
 .overlay {
-    background-color: hsla(0, 0%, 100%, .2);
+    background-color: hsla(0, 0%, 100%, .1);
     position: absolute;
     top: 0;
     bottom: 0;
