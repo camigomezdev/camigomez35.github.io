@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-12 section-container-spacer">
-            <h2 class="text-center">Como me represento</h2>
+            <h2 class="text-center">Resumen</h2>
         </div>
     </div>
     <div class="row">
@@ -25,4 +25,88 @@
             <h3 class="text-center">Libre</h3>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="resume-title">
+                    <h3>Experiencia</h3>
+                </div>
+                <div class="resume">
+                    <ul class="timeline">
+                        <li [ngClass]="{'timeline-inverted': i % 2 !== 0}" class="timeline-inverted" *ngFor="let element of experience; let i = index">
+                            <div class="posted-date">
+                                <span class="month">{{element.date}}</span>
+                            </div>
+                            <!-- /posted-date -->
+
+                            <div class="timeline-panel wow fadeInUp">
+                                <div class="timeline-content">
+                                    <div class="timeline-heading">
+                                        <h3>{{element.title}}</h3>
+                                        <span>{{element.company}}</span>
+                                    </div>
+                                    <!-- /timeline-heading -->
+
+                                    <div class="timeline-body">
+                                        <p>
+                                            <span *ngFor="let descriptionElement of element.description">
+                                                - {{descriptionElement}}
+                                                <br/>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <!-- /timeline-body -->
+                                </div>
+                                <!-- /timeline-content -->
+                            </div>
+                            <!-- /timeline-panel -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="resume-title">
+                    <h3>Educación</h3>
+                </div>
+                <div class="resume">
+                    <ul class="timeline">
+                        <li [ngClass]="{'timeline-inverted': i % 2 !== 0}" class="timeline-inverted" *ngFor="let element of education; let i = index">
+                            <div class="posted-date">
+                                <span class="month">{{element.date}}</span>
+                            </div>
+                            <!-- /posted-date -->
+
+                            <div class="timeline-panel wow fadeInUp">
+                                <div class="timeline-content">
+                                    <div class="timeline-heading">
+                                        <h3>{{element.title}}</h3>
+                                        <span>{{element.company}}</span>
+                                    </div>
+                                    <!-- /timeline-heading -->
+
+                                    <div class="timeline-body">
+                                        <p>
+                                            <span *ngFor="let descriptionElement of element.description">
+                                                - {{descriptionElement}}
+                                                <br/>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <!-- /timeline-body -->
+                                </div>
+                                <!-- /timeline-content -->
+                            </div>
+                            <!-- /timeline-panel -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /.container -->
 </div>
+<br>
