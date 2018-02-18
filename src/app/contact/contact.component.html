@@ -11,8 +11,9 @@
             <i class="fa fa-map-marker"></i>
 
             <address>
-            <strong>Ciudad/Pais</strong>
-            {{city}}, {{country}}<br>
+              <strong>Ciudad/Pais</strong>
+              {{city}}, {{country}}
+              <br>
             </address>
           </div>
 
@@ -20,15 +21,15 @@
             <i class="fa fa-envelope-o"></i>
             <div class="contact-number">
               <strong>Email</strong>
-              <a [href]="'mailto:' + email">{{email}}</a>
+              <a [href]="'mailto:' + personalLinks.email">{{personalLinks.email}}</a>
             </div>
           </div>
 
           <div class="col-md-4">
-            <i class="fa fa-skype"></i>
+            <i class="fa fa-linkedin"></i>
             <div class="contact-number">
-              <strong>Skype</strong>
-              {{skype}}
+              <strong>Linkedin</strong>
+              <a [href]="personalLinks.instagram">camigomez35</a>
             </div>
           </div>
         </div>
@@ -36,25 +37,39 @@
 
       <div class="col-md-12">
         <div class="row center-md text-center">
-          <div class="col-md-6">
-            <i class="fa fa-map-marker"></i>
+          <div class="col-md-4">
+            <i class="fa fa-github-alt"></i>
 
             <address>
-            <strong>Linkedin</strong>
-            {{linkedin}}<br>
+              <strong>Github</strong>
+              <a [href]="personalLinks.instagram">camigomez35</a>
+              <br>
             </address>
           </div>
 
-          <div class="col-md-6">
-            <i class="fa fa-envelope-o"></i>
-            <div class="contact-number">
-              <strong>Github</strong>
-              {{github}}
-            </div>
+          <div class="col-md-4">
+            <i class="fa fa-instagram"></i>
+            <address>
+              <strong>Instagram</strong>
+              <a [href]="personalLinks.instagram">camigomez35</a>
+              <br>
+            </address>
           </div>
+
+          <div class="col-md-4">
+              <i class="fa fa-twitter"></i>
+              <address>
+                <strong>Twitter</strong>
+                <a [href]="personalLinks.twitter">camigomez318</a>
+                <br>
+              </address>
+            </div>
 
         </div>
       </div>
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section><!-- End Contact Section -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- End Contact Section -->
