@@ -5,6 +5,7 @@
 </div>
 <div class="grid-container">
   <div *ngFor="let repo of repos">
-    {{repo.name}}
+    <a [href]="'http://github.com/camigomez35/'+repo.name" target="_blank">{{repo.name}}</a>
+    <p>{{repo.language}}</p>
   </div>
 </div>
