@@ -1,10 +1,10 @@
 /* === NAVIGATION === */
 .header {
-    border-bottom: 1px solid rgba(0, 53, 119, 1);
+    /* border-bottom: 1px solid rgba(0, 53, 119, 1); */
     position: relative;
     width: 100%;
     z-index: 998;
-    padding-bottom: 1px;
+    /* padding-bottom: 1px; */
     background: #fff;
 }
 
